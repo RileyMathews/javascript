@@ -25,6 +25,7 @@ let addExcitement = (theWordArray, addedCharacter) => {
         buildMeUp += " " + theWordArray[i];
         //check to see if the counter variable is at one of every third words
         if ((i + 1) % 3 === 0) {
+            //iterate an additional time for every third word available
             for (let x = 0; x < (i + 1) / 3; x++) {
                 //add an ! to the output
                 buildMeUp += addedCharacter;

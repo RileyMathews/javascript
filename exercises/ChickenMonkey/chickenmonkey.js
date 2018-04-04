@@ -7,14 +7,18 @@ function output(message) {
     //console.log(message);
 }
 
+//start iterating through numbers
 for (let i = 1; i <= 100; i++) {
-    const thisNumber = i;
-    if (thisNumber % 5 === 0 && thisNumber % 7 === 0) {
+    //if current iteration is divisible by 5 and 7 output chickenmonkey
+    if (i % 5 === 0 && i % 7 === 0) {
         output("ChickenMonkey ");
-    } else if (thisNumber % 5 === 0) {
+      //if i is divisible by 5 output chicken  
+    } else if (i % 5 === 0) {
         output("Chicken ");
-    } else if (thisNumber % 7 === 0) {
+      //if i is divisible by 7 output monkey  
+    } else if (i % 7 === 0) {
         output("Monkey ");
+      //if i is not divisble by 5 or 7 output the number  
     } else {
         output(i + " ");
     }

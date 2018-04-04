@@ -1,6 +1,7 @@
 //app to convert a dollar ammount into coins
 //declare variables for dollar ammount and piggy bank
 let dollarAmount = 268;
+const originalAmount = dollarAmount;
 const piggyBank = {
     "quarters": 0,
     "dimes": 0,
@@ -31,5 +32,6 @@ while (dollarAmount > 0) {
     }
 }
 
+console.log("You started with",originalAmount / 100);
 console.log(piggyBank);
 console.log(dollarAmount);
